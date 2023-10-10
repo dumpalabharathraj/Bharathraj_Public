@@ -1,6 +1,8 @@
-{
-    "access_key": "AKIA2MI4ZTJNJ4J2AMKC",
-    "secret_key": "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",
-    "region": "us-east-1"
+terraform{
+    backend "s3" {
+        bucket = "bharathraj" #This bucket must be already present in aws
+        key = "devopsb16.tfstate" #inside Bharathraj s3 bucket devopsb16.tfstate will be created
+        region = "us-east-1"
+      
+    }
 }
-
