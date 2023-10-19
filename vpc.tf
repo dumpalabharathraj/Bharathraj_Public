@@ -4,7 +4,8 @@ resource "aws_vpc" "my_vpc" {
     tags = {
         Name = var.vpc_name
 	Owner = "Dumpala Bharathraj"
-	#environment = "Prod"
+	environment = "Prod"
+    CostCenter = 8080
     }
 }
 
